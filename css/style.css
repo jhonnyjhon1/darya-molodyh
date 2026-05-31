@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_24pt-Regular.ttf');
+}
+
+.video-2 {
+    display: none;
+}
+
+.video-3 {
+    display: none;
+}

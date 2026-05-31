@@ -1,0 +1,283 @@
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
+    background-color: #ffeae6;
+    /* filter: brightness(0.5); */
+}
+
+.up {
+    grid-column: span 8;
+    padding: 0 25px;
+    background-color: #fcccc4;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.logo span {
+    font-weight: 900;
+    font-style: normal;
+}
+
+.menu_nav {
+    display: flex;
+    gap: 20px;
+}
+
+.menu_nav button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    transform: 0.5s;
+}
+
+.menu_nav button:hover {
+    opacity: 0.5;
+}
+
+.content_title {
+    position: relative;
+    grid-row: 3 span;
+    grid-column: 5 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}
+
+.title {
+    position: absolute;
+    font-size: 2.75em;
+    left: 5%;
+    bottom: 5%;
+}
+
+.title span {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content_title img {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 100px;
+}
+
+.content_img {
+    grid-row: 3 span;
+    grid-column: 3 span;
+    background-color: #fcccc450;
+    background-image: url('../img/daria.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.content_work {
+    position: relative;
+    grid-row: 4 span;
+    grid-column: 4 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}
+
+.work {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.work hr {
+    border: #f8a99b 2px solid;
+}
+
+.work button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 0;
+    font-size: 1.3em;
+}
+.work button:hover {
+    opacity: 0.5;
+}
+
+.work video {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.work img {
+    width: 90%;
+    border-radius: 25px;
+}
+
+.work_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content_desc {
+    position: relative;
+    grid-row: 3 span;
+    grid-column: 4 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}
+
+.content_desc img {
+    position: absolute;
+    width: 80px;
+}
+
+.desc {
+    position: absolute;
+    width: 80%;
+    bottom: 10%;
+    left: 5%;
+    font-size: 1.3em;
+}
+
+.content_contact {
+    position: relative;
+    grid-row: 2 span;
+    grid-column: 4 span;
+    background-color: #f8a99b;
+    border-radius: 25px;
+}
+
+.contact_up {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.contact_up a {
+    font-size: 2em;
+}
+
+.contact_title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.content_link {
+    grid-column: 4 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 0;
+}
+
+.content_link a {
+    font-size: 1.1em;
+}
+
+.alert {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -50%;
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: #fcccc4;
+    z-index: 100;
+    border-radius: 50px;
+}
+
+.alert_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.alert_h {
+    font-size: 3.5em;
+}
+
+.alert_p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.alert_img {
+    width: 100%;
+}
+
+.alert input,
+.alert textarea  {
+    width: 70%;
+    font-size: 2em;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 5px solid #000;
+}
+
+.alert input::placeholder,
+.alert textarea::placeholder {
+    color: #000;
+}
+
+.alert_btn {
+    padding: 10px 50px;
+    background-color: #f8a99b;
+    font-size: 2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+}
+
+.cross {
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    border: none;
+    background: none;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.cross:hover {
+    transform: translate(-50%, -50%) rotate(360deg);
+}

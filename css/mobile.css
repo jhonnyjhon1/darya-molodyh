@@ -1,0 +1,262 @@
+
+
+main {
+    width: 100%;
+    height: 200vh;
+    padding: 25px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 25px;
+    background-color: #ffeae6;
+    /* filter: brightness(0.5); */
+}
+
+.up {
+    position: relative;
+    padding: 0 25px;
+    background-color: #fcccc4;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0;
+}
+
+.logo {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.logo span {
+    font-weight: 900;
+    font-style: normal;
+}
+
+.menu_nav {
+    
+    display: none;
+    gap: 20px;
+}
+
+.menu_nav a {
+    font-size: 1em;
+}
+
+.content_title {
+    position: relative;
+    grid-row: 4 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}
+
+.title {
+    position: absolute;
+    font-size: 2.5em;
+    left: 5%;
+    bottom: 5%;
+}
+
+.title span {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content_title img {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 100px;
+}
+
+.content_img {
+    grid-row: 6 span;
+    background-color: #fcccc450;
+    background-image: url('../img/daria.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    border-radius: 25px;
+}
+
+.content_work {
+    position: relative;
+    grid-row: 5 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}
+
+.work {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.work hr {
+    border: #f8a99b 2px solid;
+}
+
+.work button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 0;
+    font-size: 1.3em;
+}
+.work button:hover {
+    opacity: 0.5;
+}
+
+.work video {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.work img {
+    width: 90%;
+    border-radius: 25px;
+}
+
+.work_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content_desc {
+    position: relative;
+    grid-row: 3 span;
+    background-color: #fcccc4;
+    border-radius: 25px;
+}   
+
+.content_desc img {
+    position: absolute;
+    width: 80px;
+}
+
+.desc {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 1.1em;
+}
+
+.content_contact {
+    position: relative;
+    grid-row: 2 span;
+    background-color: #f8a99b;
+    border-radius: 25px;
+}
+
+.contact_up {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.contact_up button {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+}
+
+.contact_title {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.content_link {
+    background-color: #fcccc4;
+    border-radius: 25px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 0;
+}
+
+.content_link a {
+    font-size: 1.1em;
+}
+
+
+.alert {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -50%;
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: #fcccc4;
+    z-index: 100;
+    border-radius: 30px;
+}
+
+.alert_text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.alert_h {
+    font-size: 2em;
+}
+
+.alert input,
+.alert textarea  {
+    width: 70%;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 5px solid #000;
+}
+
+.alert input::placeholder,
+.alert textarea::placeholder {
+    color: #000;
+}
+
+.alert_btn {
+    padding: 10px 50px;
+    background-color: #f8a99b;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+}
+
+.cross {
+    position: absolute;
+    left: 90%;
+    top: 7%;
+    border: none;
+    background: none;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.cross:hover {
+    transform: translate(-50%, -50%) rotate(360deg);
+}
